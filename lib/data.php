@@ -9,7 +9,7 @@ use Bitrix\Main\Localization\Loc;
  * class BookmarkTable
  *  */ 
 
-class DataTable extends Entity\DataManager
+class BookmarkTable extends Entity\DataManager
 {
    /**
     * Returns DB table name for entity.
