@@ -2,12 +2,12 @@
 
 namespace Bookmark\D7;
  
-use Brainkit\Data\DataTable;
+use Brainkit\Data\BookmarkTable;
  
 class Bookmark{
 
     public static function get($cond) {
-        $result = DataTable::getList(
+        $result = BookmarkTable::getList(
                         array(
                             'select' => array('*')
         ));

@@ -1,4 +1,1 @@
-<?php
-
-echo '1';
-
+<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/bookmark/admin/bookmark.php");?>
