@@ -2,12 +2,10 @@
 
 IncludeModuleLangFile(__FILE__);
  
-use \Bitrix\Main\ModuleManager;
- 
-Class Bookmarks extends CModule
+Class Bookmark extends CModule
 {
  
-    var $MODULE_ID = "bookmarks";
+    var $MODULE_ID = "Bookmark";
     var $MODULE_VERSION;
     var $MODULE_VERSION_DATE;
     var $MODULE_NAME;
@@ -18,7 +16,7 @@ Class Bookmarks extends CModule
     {
         $this->MODULE_VERSION = "1.0.0";
         $this->MODULE_VERSION_DATE = "16.04.2019";
-        $this->MODULE_NAME = "Bookmarks";
+        $this->MODULE_NAME = "Bookmark";
         $this->MODULE_DESCRIPTION = "Test task from Lenvendo";
     }
  
@@ -27,7 +25,7 @@ Class Bookmarks extends CModule
         $this->InstallDB();
         $this->InstallEvents();
         $this->InstallFiles();
-        RegisterModule("bookmarks");
+        RegisterModule("bookmark");
         return true;
     }
  
@@ -36,7 +34,7 @@ Class Bookmarks extends CModule
         $this->UnInstallDB();
         $this->UnInstallEvents();
         $this->UnInstallFiles();
-        UnRegisterModule("bookmarks");
+        UnRegisterModule("bookmark");
         return true;
     }
  
