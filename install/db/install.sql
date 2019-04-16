@@ -1,4 +1,4 @@
-CREATE TABLE `bookmarks` (
+CREATE TABLE `bookmark` (
         `ID` INT(11) NOT NULL AUTO_INCREMENT,
         `FAVICON` BLOB,
         `URL` TEXT NOT NULL,

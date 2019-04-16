@@ -1,7 +1,7 @@
 <?php
 
 Bitrix\Main\Loader::registerAutoloadClasses(
-   "bookmarks",
+   "bookmark",
    array(
       
    )
