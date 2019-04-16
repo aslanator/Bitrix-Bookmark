@@ -55,7 +55,7 @@ Class Bookmark extends CModule
     {
         global $DB;
         $this->errors = false;
-        $this->errors = $DB->RunSQLBatch($_SERVER['DOCUMENT_ROOT'] . "/local/modules/bookmark/install/db/uninstall.sql");
+        $this->errors = $DB->RunSQLBatch($_SERVER['DOCUMENT_ROOT'] . "/bitrix/modules/bookmark/install/db/uninstall.sql");
         if (!$this->errors) {
             return true;
         } else
