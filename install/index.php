@@ -64,13 +64,11 @@ Class Bookmark extends CModule
  
     function InstallFiles()
     {
-        CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/bookmark/install/admin/", $_SERVER["DOCUMENT_ROOT"]."/bitrix/admin");
         return true;
     }
  
     function UnInstallFiles()
     {
-        DeleteDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/bookmark/install/admin/", $_SERVER["DOCUMENT_ROOT"]."/bitrix/admin");
         return true;
     }
 }
