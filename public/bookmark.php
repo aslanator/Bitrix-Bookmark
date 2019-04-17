@@ -1,6 +1,6 @@
 <?
 use Bitrix\Main\Localization\Loc;
-use Bookmark\D7\Bookmark;
-use Bookmark\D7\BookmarkTable;
+use Bookmark\Bookmark;
+use Bookmark\BookmarkTable;
 
 echo "12";

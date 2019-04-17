@@ -1,8 +1,8 @@
 <?php 
 
-namespace Bookmark\D7;
+namespace Bookmark;
  
-use Bookmark\D7\BookmarkTable;
+use Bookmark\BookmarkTable;
  
 class Bookmark{
 

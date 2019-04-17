@@ -4,7 +4,7 @@ require($_SERVER['DOCUMENT_ROOT'] . '/bitrix/modules/bookmark/public/bookmark.ph
 Bitrix\Main\Loader::registerAutoloadClasses(
    "bookmark",
    array(
-    "Bookmark\\D7\\Bookmark" => "lib/bookmark.php",
-    "Bookmark\\D7\\BookmarkTable" => "lib/data.php",
+    "Bookmark\\Bookmark" => "lib/bookmark.php",
+    "Bookmark\\BookmarkTable" => "lib/bookmarkTable.php",
    )
 );

@@ -1,8 +1,6 @@
 <?php
 
 IncludeModuleLangFile(__FILE__);
-
-// use \Bitrix\Main\ModuleManager;
  
 Class Bookmark extends CModule
 {
