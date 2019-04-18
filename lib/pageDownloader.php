@@ -60,6 +60,7 @@ class pageDownloader{
 
 	public function getError(){
 		if($this->lastErrorCode || $this->lastErrorMessage){
+            $this->lastErrorMessage = $this->lastErrorMessage ? $this->lastErrorMessage : 'Error';
 			return ['CODE' => $this->lastErrorCode, 'MESSAGE' => $this->lastErrorMessage];
 		}
 		return false;
