@@ -63,22 +63,18 @@ class BookmarkTable extends Entity\DataManager
             ),
           'META_DESCRIPTION' => array(
                 'data_type' => 'string',
-                'required' => true,
                 'title' => Loc::getMessage('DATA_ENTITY_META_DESCRIPTION_FIELD'),
             ),
           'META_KEYWORDS' => array(
                 'data_type' => 'string',
-                'required' => true,
                 'title' => Loc::getMessage('DATA_ENTITY_META_KEYWORDS_FIELD'),
             ),
             'PASSWORD' => array(
                 'data_type' => 'string',
-                'required' => true,
                 'title' => Loc::getMessage('DATA_ENTITY_META_PASSWORD_FIELD'),
             ),
             'CREATED' => array(
                 'data_type' => 'datetime',
-                'required' => true,
                 'title' => Loc::getMessage('DATA_ENTITY_CREATED_FIELD'),
             ),
         );

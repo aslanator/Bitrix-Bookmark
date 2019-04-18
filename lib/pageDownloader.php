@@ -50,7 +50,7 @@ class pageDownloader{
 		$this->content = \curl_exec( $this->curl );
 		$this->lastErrorCode     = \curl_errno( $this->curl );
 		$this->lastErrorMessage  = \curl_error( $this->curl );
-		$this->header  = \curl_getinfo( $this->curl );
+		$this->headers  = \curl_getinfo( $this->curl );
 		\curl_close( $this->curl );
 	}
 
@@ -61,7 +61,7 @@ class pageDownloader{
 	public function getError(){
 		if($this->lastErrorCode || $this->lastErrorMessage){
             $this->lastErrorMessage = $this->lastErrorMessage ? $this->lastErrorMessage : 'Error';
-			return ['CODE' => $this->lastErrorCode, 'MESSAGE' => $this->lastErrorMessage];
+			return  $this->lastErrorCode . ' : ' . $this->lastErrorMessage;
 		}
 		return false;
 	}
@@ -70,8 +70,8 @@ class pageDownloader{
 	* @return Array|false
 	*/
 
-	public function getHeader(){
-		return $this->getProperty('header');
+	public function getHeaders(){
+		return $this->getProperty('headers');
 	}
 
 	/**
@@ -104,7 +104,8 @@ class pageDownloader{
 			CURLOPT_TIMEOUT => 120,
 			CURLOPT_POST => false,
 			CURLOPT_FOLLOWLOCATION => true,
-			CURLOPT_CUSTOMREQUEST => 'GET'
+            CURLOPT_CUSTOMREQUEST => 'GET',
+            CURLOPT_RETURNTRANSFER => true
 		];
 
 		foreach($options as $key => $option){
