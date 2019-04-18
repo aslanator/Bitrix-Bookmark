@@ -5,12 +5,35 @@ namespace Bookmark;
 class pageDownloader{
 
 
-	
-	protected $curl;
-	protected $content;
-	protected $lastErrorCode;
-	protected $lastErrorMessage;
-	protected $header;
+	/**
+	 * @var resource
+	 */
+    protected $curl;
+    
+    /**
+	 * @var mixed
+	 */
+
+    protected $content;
+    
+    /**
+	 * @var int
+	 */
+    protected $lastErrorCode;
+    
+    /**
+	 * @var string
+	 */
+    protected $lastErrorMessage;
+    
+    /**
+	 * @var resource
+	 */
+    protected $header;
+    
+    /**
+	 * @var array
+	 */
 	protected $options = Array();
 
 	public function __construct(String $url, Array $options = []){

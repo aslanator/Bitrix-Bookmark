@@ -6,5 +6,6 @@ Bitrix\Main\Loader::registerAutoloadClasses(
    array(
     "Bookmark\\Bookmark" => "lib/bookmark.php",
     "Bookmark\\BookmarkTable" => "lib/bookmarkTable.php",
+    "Bookmark\\pageDownloader" => "lib/pageDownloader.php",
    )
 );
