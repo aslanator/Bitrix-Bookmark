@@ -58,7 +58,6 @@ class pageDownloader{
 	 */
 
 	public function getError(){
-		print_R($this->curl);
 		if($this->lastErrorCode || $this->lastErrorMessage){
 			return ['CODE' => $this->lastErrorCode, 'MESSAGE' => $this->lastErrorMessage];
 		}
