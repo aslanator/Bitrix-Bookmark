@@ -38,7 +38,8 @@ class pageDownloader{
 
 	public function __construct(String $url, Array $options = []){
 		$this->curl = \curl_init($url);
-		$this->setOptions($options);
+        $this->setOptions($options);
+        $this->sendRequest();
 	}
 
 	/**
