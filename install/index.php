@@ -62,6 +62,7 @@ Class Bookmark extends CModule
  
     function InstallFiles()
     {
+        CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/bookmark/install/components/", $_SERVER["DOCUMENT_ROOT"]."/bitrix/components", true, true);
         return true;
     }
  

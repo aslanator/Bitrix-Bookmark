@@ -1,0 +1,23 @@
+.sorted-field-asc:before{
+    content: "▼";
+}
+
+.sorted-field-desc:before{
+    content: "▲";
+}
+
+.bookmark-created-col-title{
+    width: 20%;
+}
+
+.bookmark-url-col-title{
+    width: 30%;
+}
+
+.bookmark-favicon-col-title{
+    width: 10%;
+}
+
+.bookmark-title-col-title{
+    width: 40%;
+}
