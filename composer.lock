@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1c9054c80d43222e960c9de64f129692",
+    "content-hash": "ef625701c21567ebe783afa24623f137",
     "packages": [
         {
             "name": "electrolinux/phpquery",
@@ -45,6 +45,51 @@
             "description": "phpQuery is a server-side, chainable, CSS3 selector driven Document Object Model (DOM) API based on jQuery JavaScript Library",
             "homepage": "http://code.google.com/p/phpquery/",
             "time": "2013-03-21T12:39:33+00:00"
+        },
+        {
+            "name": "rych/phpass",
+            "version": "v2.0.2-p1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rchouinard/phpass.git",
+                "reference": "728bb4a912402593efa0242acba47b07fca64b96"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rchouinard/phpass/zipball/728bb4a912402593efa0242acba47b07fca64b96",
+                "reference": "728bb4a912402593efa0242acba47b07fca64b96",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.7"
+            },
+            "suggest": {
+                "ext-hash": "Enabling the hash extension allows you to combine the included hash adapters with HMAC for an extra layer of security."
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Phpass": "library/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ryan Chouinard",
+                    "email": "rchouinard@gmail.com",
+                    "homepage": "http://ryanchouinard.com"
+                }
+            ],
+            "description": "PHP Password Library: Easy, secure password management for PHP",
+            "homepage": "http://rchouinard.github.com/phpass",
+            "keywords": [
+                "cryptography",
+                "password"
+            ],
+            "time": "2012-04-25T00:15:13+00:00"
         }
     ],
     "packages-dev": [],

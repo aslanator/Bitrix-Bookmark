@@ -1,5 +1,6 @@
 {
     "require": {
-        "electrolinux/phpquery": "^0.9.6"
+        "electrolinux/phpquery": "^0.9.6",
+        "rych/phpass": "v2.0.2-p1"
     }
 }
