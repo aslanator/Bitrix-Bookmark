@@ -22,7 +22,7 @@ $this->addExternalCss("/bitrix/css/main/bootstrap.css");
                         <li class="list-group-item"><b><?=GetMessage('FAVICON')?></b>: <img src="<?=$arResult['FAVICON']?>" alt="favicon"></li>
                     <?endif;?>
                     <li class="list-group-item"><b><?=GetMessage('URL')?></b>: <a target="_blank" href="<?=$arResult['URL']?>"><?=$arResult['URL']?></a></li>
-                    <li class="list-group-item"><b><?=GetMessage('TITLE')?></b>: <?=$arResult['CREATED']?></li>
+                    <li class="list-group-item"><b><?=GetMessage('TITLE')?></b>: <?=$arResult['TITLE']?></li>
                     <li class="list-group-item"><b><?=GetMessage('META_DESCRIPTION')?></b>: <?=$arResult['META_DESCRIPTION']?></li>
                     <li class="list-group-item"><b><?=GetMessage('META_KEYWORDS')?></b>: <?=$arResult['META_KEYWORDS']?></li>
                 </ul>
