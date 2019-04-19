@@ -1,6 +1,5 @@
 <?php
 require __DIR__ . '/vendor/autoload.php';
-require($_SERVER['DOCUMENT_ROOT'] . '/bitrix/modules/bookmark/public/bookmark.php');
 
 Bitrix\Main\Loader::registerAutoloadClasses(
    "bookmark",
