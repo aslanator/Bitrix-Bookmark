@@ -127,10 +127,9 @@ class BookmarkAddComponent extends \CBitrixComponent{
         $parsedData['META_DESCRIPTION'] = $document->find('meta[name="description"]')->attr("content");
         $parsedData['META_KEYWORDS'] = $document->find('meta[name="keywords"]')->attr("content");
 
-        $faviconHref = $document->find('link[rel*="icon"]')->attr("href");
-        if($faviconHref && $headers['url']){
-            $faviconUrl = $this->getFaviconUrl($headers['url'], $faviconHref);
-        }
+
+        $faviconUrl = 'https://www.google.com/s2/favicons?domain='.  $headers['url'];
+
         $parsedData['FAVICON'] = $this->saveFileByUrl($faviconUrl);
         $parsedData['URL'] = $headers['url'];
 
